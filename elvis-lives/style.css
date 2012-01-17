@@ -9,12 +9,22 @@ Version:        0.1.0
 */
 
 body {
-	background: #383838; 
+	background: #383838 url('img/inflicted.png');  
 	color: #efefef;
 	font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif;
+}
+
+#wrap {
+	margin-top: 0;
+	padding-top: 20px;
+	background-image: -webkit-gradient(radial, center 20%, 1000, center 20%, 0, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
+	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), #111);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Orbitron', sans-serif;
 	color: orange;
 }
+
+a, a:visited, a:active {color: orange;}
+a:hover {color: #efefef;}
