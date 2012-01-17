@@ -1,0 +1,20 @@
+/*
+Theme Name:     Elvis Lives (child of Roots)
+Theme URI:      http: //kalamazoox.org
+Description:    Child theme for the Roots theme for Kalamazoo X. 
+Author:         David Damstra
+Author URI:     http: //mirmillo.com
+Template:       roots
+Version:        0.1.0
+*/
+
+body {
+	background: #383838; 
+	color: #efefef;
+	font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Orbitron', sans-serif;
+	color: orange;
+}
