@@ -23,10 +23,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Orbitron', sans-serif;
-	color: orange;
+	color: #F57F20;
 	letter-spacing: -2px;
 	line-height: 1em;
 }
 
-a, a:visited, a:active {color: orange;}
+a, a:visited, a:active {color: #F57F20;}
 a:hover {color: #efefef;}
