@@ -30,3 +30,20 @@ h1, h2, h3, h4, h5, h6 {
 
 a, a:visited, a:active {color: #F57F20;}
 a:hover {color: #efefef;}
+
+#logo {
+	display: block;
+	height: 100px;
+	width: 600px;
+	background: transparent url('img/logo.png') no-repeat;
+	text-indent: -999999px;
+}
+#logo::before {
+	content: "";
+	position: absolute;
+	width: 1000px;
+	right: 100%;
+	top: 0;
+	height: 100px;
+	background: url('img/logo-bg.png') repeat-x;
+}
