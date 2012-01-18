@@ -47,3 +47,15 @@ a:hover {color: #efefef;}
 	height: 100px;
 	background: url('img/logo-bg.png') repeat-x;
 }
+
+#sidebar {
+	/* background: #fff;
+	border: 3px solid transparent; */ 
+	padding: 5px;	
+	-webkit-box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
+}
+
+#nav-main ul {
+	background: #000;
+}
