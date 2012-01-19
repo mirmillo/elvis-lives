@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), #111); */ 
 }
 
-#banner { position: relative; margin: 16px auto 0; z-index: 1000; }
+#banner { position: relative; margin: 16px auto 0; z-index: 1000;}
 #banner .container { padding: 0; }
 
 #logo { float: left; width: 450px; height: 125px; margin: 0 0 16px; padding: 0; }
@@ -484,9 +484,15 @@ img.ui-datepicker-trigger { vertical-align: middle; }
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 625px) {
   /* Style adjustments for viewports 768px and over go here */
+	#description, #menu-home {display: none;}
+	}
 
+
+@media only screen and (max-width: 700px) {
+  /* Style adjustments for viewports 768px and over go here */
+	#nav-utility {display: none;}
 }
 
 
