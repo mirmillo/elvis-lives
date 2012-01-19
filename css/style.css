@@ -12,7 +12,7 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0;	color: #efefef;	font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; background: #383838 url('../img/inflicted.png');  }
+body { margin: 0;	color: #282828;	font: 300 14px/1.25 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; background: #fff url('../img/bg.jpg') repeat-x;  }
 button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 ::-moz-selection { background: #F58020; color: #fff; text-shadow: none; }
@@ -101,7 +101,7 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
 h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 	font-family: 'Orbitron', sans-serif;
 	color: #F57F20;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	line-height: 1em;
 }
 
@@ -111,16 +111,17 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
    Header
    ========================================================================== */
 #wrap {
-	margin-top: 0;
+	margin: 0;
 	padding-top: 20px;
-	background-image: -webkit-gradient(radial, center 20%, 1000, center 20%, 0, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
-	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), #111);
+	padding-bottom: 20px;
+	/* background-image: -webkit-gradient(radial, center 20%, 1000, center 20%, 0, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), #111); */ 
 }
 
 #banner { position: relative; margin: 16px auto 0; z-index: 1000; }
 #banner .container { padding: 0; }
 
-#logo { float: left; width: 300px; height: 75px; margin: 0 0 16px; padding: 0; }
+#logo { float: left; width: 450px; height: 125px; margin: 0 0 16px; padding: 0; }
 #logo::before {
 	content: "";
 	position: absolute;
@@ -129,35 +130,45 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 	top: 0;
 	height: 100px;
 	background: url('../img/logo-bg.png') repeat-x;
+}
 
+#description {
+	float: left;
+	margin-top: 80px;
+	margin-left: -400px;
+	color: #73C8FF;
+	font-family: 'Shadows Into Light', serif;
+	font-size: 2em;
+	letter-spacing: -1.5px;
 }
 
 #nav-main ul {
-  background: #06c;
+  /* background: #000;
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)); */
   position: relative;
   list-style: none;
   margin: 0 0 16px 0;
   padding: 0;
   float: left;
   width: 100%;
-  -moz-border-radius: 6px;
+  /* -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  border-radius: 6px;
+  border-radius: 6px; */
 }
 #nav-main ul li { float: left; margin: 0; *zoom: 1; }
 #nav-main ul li:hover { position: relative; }
 #nav-main ul li a {
   text-decoration: none;
   display: block;
-  font-size: 14px;
-  padding: 8px 16px;
+  font-size: 20px;
+  padding: 23px 16px 25px;
   color: #fff;
   margin: 0;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+  border-right: 1px solid #000;
 }
 #nav-main ul li a:hover,
 #nav-main ul li.current-menu-item > a,
@@ -167,7 +178,7 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 #nav-main ul li.current-page-parent > a,
 #nav-main ul li.current-page-ancestor > a
 #nav-main ul li:hover > a {
-  color: #73c8ff;
+  background-color: #73c8ff;
 }
 
 #nav-main ul ul {
@@ -234,8 +245,13 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
    Sidebar
    ========================================================================== */
 
-#sidebar { position: relative; }
-#sidebar .container { width: auto; padding: 0; }
+#sidebar { position: relative;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
+	background: rgba(255, 255, 255, 0.1); 
+/* 	margin-top: -250px; */
+}
+#sidebar .container { width: auto; padding: 5px; color: #38383; }
 #sidebar .widget { clear: both; margin-bottom: 1.5em; }
 #sidebar .widget .gform_wrapper ul { padding: 0; list-style-type: none; }
 
@@ -251,6 +267,11 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 .hentry h2 a { text-decoration: none; }
 .hentry time { display: block; font-size: 1.2em; position: relative; }
 .hentry p.byline { }
+.container h2 {
+	color: #73c8ff;
+	font-family: 'Shadows Into Light', serif;
+	letter-spacing: -1.5px;
+}
 
 
 
@@ -307,7 +328,8 @@ figure.gallery-item figcaption { display: none; }
    Footer
    ========================================================================== */
 
-#content-info { clear: both; position: relative; }
+#footer-wrapper {background: #383838 url('../img/inflicted.png'); min-height: 400px; margin-top: -25px; padding-top: 20px; color: #a8a8a8; border-top: 1px solid #000;}
+#content-info { clear: both; position: relative; width: 960px; margin: 0 auto; }
 #content-info > .container { padding: 0 0 1.5em; }
 
 #content-info ul.menu { margin: 0 0 24px; padding: 0; list-style-type: none; }

@@ -12,6 +12,8 @@
 
   <?php roots_stylesheets(); ?>
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
@@ -35,7 +37,10 @@
 
         <a id="logo" href="<?php echo home_url(); ?>/">
           <img src="<?php echo get_header_image(); ?>" alt="<?php bloginfo('name'); ?>">
-        </a>
+		</a>
+			<div id="description">
+				<?php bloginfo('description'); ?>
+			</div>
 
         <nav id="nav-main" role="navigation">
           <?php wp_nav_menu(array('theme_location' => 'primary_navigation')); ?>
