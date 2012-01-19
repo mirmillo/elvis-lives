@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <?php roots_stylesheets(); ?>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700' rel='stylesheet' type='text/css'>
 
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
@@ -33,7 +34,7 @@
       <div class="container">
 
         <a id="logo" href="<?php echo home_url(); ?>/">
-          <img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>">
+          <img src="<?php echo get_header_image(); ?>" alt="<?php bloginfo('name'); ?>">
         </a>
 
         <nav id="nav-main" role="navigation">
