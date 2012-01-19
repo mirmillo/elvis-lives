@@ -1,61 +1,11 @@
 /*
-Theme Name:     Elvis Lives (child of Roots)
-Theme URI:      http: //kalamazoox.org
-Description:    Child theme for the Roots theme for Kalamazoo X. 
-Author:         David Damstra
-Author URI:     http: //mirmillo.com
-Template:       roots
-Version:        0.1.0
+Theme Name:         Roots
+Theme URI:          http://rootstheme.com/
+Description:        Roots is a starting WordPress theme made for developers that's based on HTML5 Boilerplate, Starkers, and CSS frameworks. <a href="https://github.com/retlehs/roots/contributors">Contribute on GitHub</a>
+Version:            4.0.0
+Author:             Ben Word
+Author URI:         http://benword.com/
+
+License:            The Unlicense
+License URI:        http://unlicense.org/
 */
-
-body {
-	background: #383838 url('img/inflicted.png');  
-	color: #efefef;
-	font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif;
-}
-
-#wrap {
-	margin-top: 0;
-	padding-top: 20px;
-	background-image: -webkit-gradient(radial, center 20%, 1000, center 20%, 0, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
-	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), #111);
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Orbitron', sans-serif;
-	color: #F57F20;
-	letter-spacing: -2px;
-	line-height: 1em;
-}
-
-a, a:visited, a:active {color: #F57F20;}
-a:hover {color: #efefef;}
-
-#logo {
-	display: block;
-	height: 100px;
-	width: 600px;
-	background: transparent url('img/logo.png') no-repeat;
-	text-indent: -999999px;
-}
-#logo::before {
-	content: "";
-	position: absolute;
-	width: 1000px;
-	right: 100%;
-	top: 0;
-	height: 100px;
-	background: url('img/logo-bg.png') repeat-x;
-}
-
-#sidebar {
-	/* background: #fff;
-	border: 3px solid transparent; */ 
-	padding: 5px;	
-	-webkit-box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
-	box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
-}
-
-#nav-main ul {
-	background: #000;
-}

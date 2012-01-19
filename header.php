@@ -33,7 +33,7 @@
       <div class="container">
 
         <a id="logo" href="<?php echo home_url(); ?>/">
-		  <?php /* <img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>"> */ bloginfo('name'); ?>
+          <img src="<?php echo get_header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="<?php bloginfo('name'); ?>">
         </a>
 
         <nav id="nav-main" role="navigation">
