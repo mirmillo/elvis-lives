@@ -12,15 +12,15 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0; /* add your base font-size and line-height here */ }
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0;	color: #efefef;	font: 300 16px/1.5 "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", sans-serif; background: #383838 url('../img/inflicted.png');  }
+button, input, select, textarea { font-family: sans-serif; color: #222; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #F58020; color: #fff; text-shadow: none; }
+::selection { background: #F58020; color: #fff; text-shadow: none; }
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #235BA6; }
+a:visited { color: #235BA6; }
+a:hover { color: #8095BF; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -98,18 +98,34 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
   color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); color: #F58020;}
 
 
 
 /* =============================================================================
    Header
    ========================================================================== */
+#wrap {
+	margin-top: 0;
+	padding-top: 20px;
+	background-image: -webkit-gradient(radial, center 20%, 1000, center 20%, 0, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
+	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0), #111);
+}
 
 #banner { position: relative; margin: 16px auto 0; z-index: 1000; }
 #banner .container { padding: 0; }
 
 #logo { float: left; width: 300px; height: 75px; margin: 0 0 16px; padding: 0; }
+#logo::before {
+	content: "";
+	position: absolute;
+	width: 1000px;
+	right: 100%;
+	top: 0;
+	height: 100px;
+	background: url('../img/logo-bg.png') repeat-x;
+
+}
 
 #nav-main ul {
   background: #06c;
