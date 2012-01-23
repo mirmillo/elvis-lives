@@ -3,6 +3,8 @@ see KalamazooX.org
 
 This is a project theme based on Roots 4.0 by Ben Word using the ZURB Foundation Responsive Grid system.
 
+On Theme options set the Grid to Foundation.  Set the #main css class to "eight columns" and the #sidebar css class to "four columns".  Or adjust as necessary.
+
 
 # [Roots Theme](http://rootstheme.com/)
 
